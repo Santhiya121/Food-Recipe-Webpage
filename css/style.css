@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'josefin Sans',sans-serif;
+    background-color: grey;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    background-size:cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.logo{
+    color: white;
+    font-size: 28px;
+}
+span{
+    color: #ea1538;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style:oblique;
+   
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .5s;
+}
+button{
+    border:none;
+    background-color: #ea1538;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+button:hover{
+    cursor:pointer;
+}
+.home-feature{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:70px;
+    padding: 40px;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    max-width: 1200px;
+    height: 600px;
+    margin: 40px auto;
+}
+.image-container {
+    overflow: hidden; 
+     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.image-container img{
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+
+}
+.image-container img:hover {
+    transform: scale(1.05);
+    filter: brightness(0.9); 
+}
+.content-container{
+    max-width: 400px;
+    padding-left: 6px;
+    background-color:white;
+}
+.content-container p{
+    font-size: 1.2em;
+    background-color:white;
+    margin-bottom: 20px;
+}
+.content-container p span{
+    color: #ea1538;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style:oblique;
+    background-color: white;
+   
+}
+.content-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color:#ea1538;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.content-container button:hover {
+    background-color:#ea1538;
+}
+.about-content {
+    max-width: 800px; 
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.about-content h2{
+    font-size: 22px;
+    margin-top: 20px;
+    background-color: white;
+}
+.about-content h2 span{
+    color: #ea1538;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style:oblique;
+    background-color: white;
+   
+}
+.about-content h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.about-content p {
+    background-color: white;
+    line-height: 1.6; 
+}
+.menu-section {
+    padding: 20px;
+    
+}
+
+.menu-content {
+    max-width: 1200px; 
+    margin: auto;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.menu-content h2 {
+    background-color: white;
+    font-size: 28px;
+    text-align: center; 
+    margin-bottom: 20px;
+    color: #ea1538;
+}
+
+.menu-item {
+
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+     
+}
+
+.menu-item h3 {
+   
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.item {
+    display: flex;
+    flex-direction:row;
+    margin-bottom: 15px; 
+    background-color: white;
+
+}
+
+.item img {
+    display: flex;
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
+    border-radius: 5px; 
+}
+
+.item-details {
+   
+    background-color: white;
+}
+
+.item-details h4 {
+    margin: 0;
+    font-size: 20px; 
+    background-color: white;
+}
+
+.item-details p {
+    margin: 5px 0; 
+    background-color: white;
+}
+
+
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.hotel-info, .contact-details {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.hotel-info h2, .contact-details h2 {
+    font-size: 1.8em;
+    color: #ea1538;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ea1538;
+    padding-bottom: 5px;
+    background-color: white;
+}
+.hotel-info p strong{
+    background-color: white;
+}
+
+.hotel-info p, .contact-details p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.contact-details q {
+    font-size: 1.2em;
+    font-style: italic;
+    display: block;
+    margin: 10px 0;
+    background-color: white;
+}
+.contact-details p strong{
+    background-color: white;
+}
+.contact-details a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ea1538;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    background-color: white;
+}
+
+.contact-details a:hover {
+    background-color: #c2132c;
+ 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    background-color: #333;
+    color: #f5f5f5;
+    background-color: white;
+}
+
+footer p {
+    font-size: 1em;
+    background-color: white;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.review-section {
+    max-width: 1200px; 
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.reviews-content {
+    max-width: 800px;
+    background-color: white;
+    padding: 15px;
+}
+
+.review {
+    background-color: white; 
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: white;
+}
+
+h3,h4 {
+    color: #333;
+    background-color: white; 
+    padding: 10px;
+}
+p{
+    background-color:white ;
+    padding: 10px;
+}
+form {
+    margin-top: 20px;
+    background-color: white; 
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white; 
+}
+@media (max-width: 1200px) {
+    .home-feature {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .image-container img {
+        width: 100%; /* Make images responsive */
+        height: auto;
+    }
+
+    .content-container {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack navigation items */
+        padding: 20px;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        padding: 10px 0;
+    }
+
+    .home-feature {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .menu-item {
+        padding: 15px; /* Adjust padding for menu items */
+    }
+
+    .item img {
+        width: 100px; /* Adjust image size in menu items */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Reduce heading size */
+    }
+
+    header p {
+        font-size: 1em; /* Adjust paragraph size */
+    }
+
+    button {
+        padding: 10px 20px; /* Adjust button size */
+    }
+
+    .content-container p {
+        font-size: 1em; /* Adjust paragraph font size */
+    }
+
+    .hotel-info h2, .contact-details h2 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .review {
+        padding: 10px; /* Adjust padding for reviews */
+    }
+}
+
+
+
+
